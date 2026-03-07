@@ -1,0 +1,58 @@
+{
+  "curiosidades": [
+    {
+      "id": 1,
+      "titulo": "Dedo de Deus",
+      "descricao": "O Dedo de Deus é o cartão postal mais famoso de Teresópolis. Com 1.692 metros de altitude, essa formação rochosa impressiona visitantes do mundo todo.",
+      "foto_url": "https://images.pexels.com/photos/29820135/pexels-photo-29820135.jpeg"
+    },
+    {
+      "id": 2,
+      "titulo": "Palacete Granado",
+      "descricao": "O Palacete Granado, em Teresópolis, foi construído em 1913 pelo comendador José Antônio Coxito Granado, fundador da famosa botica Granado. Localizado na Várzea, o casarão em estilo francês servia de residência de veraneio e chácara-modelo para cultivo de ervas medicinais, hoje abrigando a sede cultural do Sesc",
+      "foto_url": "https://odia.ig.com.br/_midias/jpg/2024/05/15/1200x750/1_palacio_granado_sesc_teresopolis-32849986.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Cachoeira dos Frades",
+      "descricao": "A Cachoeira dos Frades, no Vale dos Frades em Teresópolis, é um refúgio natural com cerca de 10 metros de altura, famosa por sua ampla piscina natural, águas cristalinas e uma pequena prainha. Localizada dentro da APA da bacia dos Frades e próxima ao Parque Estadual dos Três Picos, oferece fácil acesso, ambiente tranquilo e áreas de sombra ideais para banhos, sem estrutura comercial",
+      "foto_url": "https://hotelfazendajecava.com.br/wp-content/uploads/2024/04/Cachoeira_dos_Frades_HDR_1-455d4894-2880w-1.jpeg"
+    },
+    {
+      "id": 5,
+      "titulo": "Fonte Judith",
+      "descricao": "Construída em 1920 pelo pedreiro Manoel Guedes da Costa, seu nome tem origem em Judith, filha de Luiz de Oliveira, antigo proprietário das terras, que teria sido curada de uma grave enfermidade através das propriedades medicinais da água da fonte.",
+      "foto_url": "https://pousadaoasisteresopolis.com.br/wp-content/uploads/2021/03/fonte.jpg"
+    },
+    {
+      "id": 6,
+      "titulo": "Torres de Bonsucesso",
+      "descricao": "Com visual icônico e paredões verticais impressionantes, o complexo das Torres de Bonsucesso em Teresópolis abriga formações marcantes como a Torre Ferro de Passar (1.630m), Torre Central (1.860m) e Torre Maior (2.000m), além das Torres Ocultas e da Torre Sul.",
+      "foto_url": "https://lh3.googleusercontent.com/gps-cs-s/AHVAweozwHxo5uUeG0OcPoEgT07wFpkib_8tw4my_Wa324IHEv05h_FvT1K4VilXIc4RLLF5YgQWCtSG1MhVorTflgmk81C0fUPtfddfBmGytrb5p5rIUkm1rZG7IOKdlHSBE0kuUf52=s1360-w1360-h1020-rw"
+    },
+    {
+      "id": 7,
+      "titulo": "A Pedra do Sino",
+      "descricao": "A Pedra do Sino, ponto mais alto da Serra dos Órgãos com 2.275 metros, localiza-se no PARNASO em Teresópolis, RJ. A trilha tem cerca de 11 km de extensão (ida) e é considerada de nível difícil/pesado, levando de 4 a 6 horas para subir. O cume oferece vista 360° do Rio de Janeiro, Petrópolis e Guapimirim",
+      "foto_url": "https://www.niteroiurbano.com.br/fotos/sino_e_inferno_3110/slides/p_0129.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "Represa de Varginha",
+      "descricao": "Também conhecida como represinha, ela fica na localidade de mesmo nome, na região de Canoas, em Teresópolis. Está em uma área particular, mas que permite o acesso de visitantes - desde que sejam respeitadas as regras básicas de convivência. Outro motivo que garante que esse bonito rio e queda d´água conservem tanta beleza e tranquilidade é que essa região fica na zona de amortecimento do Parque Estadual dos Três Picos. Então, se você visitar esse lugar, lembre-se sempre de deixar apenas pegadas e levar apenas boas lembranças.",
+      "foto_url": "https://lh3.googleusercontent.com/gps-cs-s/AHVAweoQvu1A775pTD46pfERdsYhkxJ9S0IvkwGhPAvCawZV2lmmW2vlaV1aAqcF02HPcJc5UeyYOL3p5bdWMWideNnjYgC4DxlhNnkH1a-qR7B9iAOVzgHZE-BIvuWOposaqeP7FUA7ng=s1360-w1360-h1020-rw"
+    },
+    {
+      "id": 9,
+      "titulo": "Feirarte",
+      "descricao": "A Feirarte, conhecida como Feirinha do Alto em Teresópolis, é uma das maiores feiras de artesanato e moda do estado do Rio de Janeiro, funcionando aos sábados, domingos e feriados, das 10h às 18h. Localizada na Praça Higino da Silveira, reúne entre 500 e 900 expositores, oferecendo roupas, artesanato, gastronomia e música ao vivo",
+      "foto_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/d3/4d/f4/photo1jpg.jpg?w=900&h=500&s=1"
+    },
+    {
+      "id": 10,
+      "titulo": "Igreja Matriz de Santa Teresa",
+      "descricao": "A Igreja Matriz de Santa Teresa, marco histórico de Teresópolis fundado em 1855, foi reconstruída em estilo gótico na década de 1930. Conhecida popularmente como Catedral, o local destaca-se pelos vitrais tchecos e por ter sido o local de batismo de Santos Dumont. Para mais detalhes, visite o site oficial de turismo de Teresópolis.",
+      "foto_url": "https://www.meiahora.com.br/_midias/jpg/2021/10/15/764x428/1_51119721723_cc962129c4_o-23312494.jpg"
+    }
+  ]
+}
