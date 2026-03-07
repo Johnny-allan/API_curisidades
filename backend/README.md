@@ -37,3 +37,20 @@ Body:
   "foto_url": "URL da foto"
 }
 ```
+
+### PUT /curiosidades/:id
+Atualiza uma curiosidade existente.
+
+Body:
+```json
+{
+  "titulo": "Novo título",
+  "descricao": "Nova descrição",
+  "foto_url": "Nova URL da foto"
+}
+```
+
+### DELETE /curiosidades/:id
+Deleta uma curiosidade pelo ID.
+
+Exemplo: `DELETE /curiosidades/1`
