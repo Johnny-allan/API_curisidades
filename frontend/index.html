@@ -10,11 +10,46 @@
     <header>
         <h1>Curiosidades de Teresópolis</h1>
         <p>Descubra os encantos da cidade serrana</p>
+        <button id="btn-abrir-painel" onclick="togglePainel()"> Cadastro</button>
     </header>
 
-    <main id="curiosidades-container">
-        
-    </main>
+    <main id="curiosidades-container"></main>
+
+    <!-- Painel lateral de cadastro -->
+    <div id="painel-overlay" class="hidden" onclick="fecharPainelOverlay(event)">
+        <aside id="painel-cadastro">
+            <h2>Gerenciar Curiosidades</h2>
+            <button id="btn-fechar-painel" onclick="togglePainel()">✕</button>
+
+            <h3>Adicionar Nova</h3>
+            <form id="form-cadastro">
+                <input type="text" id="titulo" placeholder="Título" required>
+                <textarea id="descricao" placeholder="Descrição" rows="3" required></textarea>
+                <input type="text" id="foto_url" placeholder="URL da foto">
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <h3>Curiosidades Cadastradas</h3>
+            <ul id="lista-gerenciar"></ul>
+        </aside>
+    </div>
+
+    <!-- Modal de edição -->
+    <div id="modal-overlay" class="hidden">
+        <div class="modal">
+            <h2>Editar Curiosidade</h2>
+            <form id="form-editar">
+                <input type="hidden" id="edit-id">
+                <input type="text" id="edit-titulo" placeholder="Título" required>
+                <textarea id="edit-descricao" placeholder="Descrição" rows="4" required></textarea>
+                <input type="text" id="edit-foto_url" placeholder="URL da foto">
+                <div class="modal-botoes">
+                    <button type="submit">Salvar</button>
+                    <button type="button" id="btn-cancelar">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <footer>
         <p>Projeto estudantil desenvolvido por Allan Johnny &copy; 2026</p>
