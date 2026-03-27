@@ -1,18 +1,23 @@
 # 🏔️ API Curiosidades de Teresópolis
 
-API REST para gerenciar curiosidades sobre a cidade de Teresópolis, desenvolvida com Node.js e Express.
+API REST para gerenciar curiosidades sobre a cidade de Teresópolis, desenvolvida com Node.js, Express e PostgreSQL.
+
+## 🌐 Site no Ar
+
+Acesse: https://api-curisidades.onrender.com
 
 ## 📋 Sobre o Projeto
 
-Sistema completo com backend e frontend para cadastrar, visualizar, editar e excluir curiosidades sobre Teresópolis. Os dados são armazenados em arquivo JSON.
+Sistema completo com backend e frontend para visualizar, cadastrar, editar e excluir curiosidades sobre Teresópolis. Os dados são armazenados em banco de dados PostgreSQL hospedado no Render.
 
 ## 🚀 Tecnologias
 
 ### Backend
 - Node.js
 - Express.js
+- Sequelize ORM
+- PostgreSQL (produção) / SQLite (desenvolvimento local)
 - CORS
-- File System (fs)
 
 ### Frontend
 - HTML5
@@ -23,17 +28,17 @@ Sistema completo com backend e frontend para cadastrar, visualizar, editar e exc
 
 ```
 ├── backend/
-│   ├── server.js          # Servidor Express
-│   ├── dados.json         # Banco de dados JSON
+│   ├── server.js          # Servidor Express + Sequelize
+│   ├── banco.sqlite       # Banco de dados local (desenvolvimento)
 │   ├── package.json       # Dependências
-│   └── README.md          # Documentação do backend
+│   └── README.md
 └── frontend/
     ├── index.html         # Interface principal
     ├── script.js          # Lógica do frontend
     └── style.css          # Estilos
 ```
 
-## 🔧 Instalação e Execução
+## 🔧 Instalação e Execução Local
 
 ### Backend
 
@@ -51,29 +56,13 @@ Abra o arquivo `frontend/index.html` diretamente no navegador ou use um servidor
 
 ```bash
 cd frontend
-# Com Python
 python -m http.server 8000
-
-# Com Node.js (http-server)
-npx http-server
 ```
 
 ## 📡 Endpoints da API
 
 ### GET /curiosidades
 Retorna todas as curiosidades cadastradas.
-
-**Resposta:**
-```json
-[
-  {
-    "id": 1,
-    "titulo": "Título da curiosidade",
-    "descricao": "Descrição detalhada",
-    "foto_url": "URL da imagem"
-  }
-]
-```
 
 ### POST /curiosidades
 Cria uma nova curiosidade.
@@ -90,28 +79,27 @@ Cria uma nova curiosidade.
 ### PUT /curiosidades/:id
 Atualiza uma curiosidade existente.
 
-**Body:**
-```json
-{
-  "titulo": "Título atualizado",
-  "descricao": "Descrição atualizada",
-  "foto_url": "URL atualizada"
-}
-```
-
 ### DELETE /curiosidades/:id
 Remove uma curiosidade pelo ID.
 
 ## 💡 Funcionalidades
 
-- ✅ Listar todas as curiosidades
-- ✅ Adicionar novas curiosidades
-- ✅ Editar curiosidades existentes
-- ✅ Excluir curiosidades
-- ✅ Interface responsiva
-- ✅ Persistência de dados em JSON
+- ✅ Página inicial exibe todas as curiosidades automaticamente
+- ✅ Painel lateral de gerenciamento acessível pelo botão "Cadastro" no canto superior direito
+- ✅ Adicionar novas curiosidades pelo painel lateral
+- ✅ Editar curiosidades via modal de edição
+- ✅ Excluir curiosidades com confirmação
+- ✅ Dados persistidos em PostgreSQL
+- ✅ Dados iniciais carregados automaticamente se o banco estiver vazio
+- ✅ Interface responsiva (mobile e desktop)
 
-## 👨‍💻 Autor
+## ☁️ Hospedagem
+
+- Plataforma: [Render](https://render.com)
+- Backend + Frontend: 1 Web Service (Node.js)
+- Banco de dados: PostgreSQL (Render Free)
+
+## 👨💻 Autor
 
 **Allan Johnny**
 
