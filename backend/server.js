@@ -3,13 +3,11 @@ const cors = require('cors');
 const { Sequelize, DataTypes } = require('sequelize');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-const sequelize = new Sequelize({
-    dialect: 'sqlite',
-    storage: './banco.sqlite',
-    logging: false
-});
+const sequelize = process.env.DATABASE_URL
+    ? new Sequelize(process.env.DATABASE_URL, { dialect: 'postgres', logging: false, dialectOptions: { ssl: { require: true, rejectUnauthorized: false } } })
+    : new Sequelize({ dialect: 'sqlite', storage: './banco.sqlite', logging: false });
 
 const Curiosidade = sequelize.define('Curiosidade', {
     titulo: { type: DataTypes.STRING, allowNull: false },
