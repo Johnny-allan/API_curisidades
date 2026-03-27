@@ -1,4 +1,4 @@
- API Curiosidades de Teresópolis
+# 🏔️ API Curiosidades de Teresópolis
 
 API REST para gerenciar curiosidades sobre a cidade de Teresópolis, desenvolvida com Node.js e Express.
 
