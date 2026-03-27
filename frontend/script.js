@@ -1,6 +1,6 @@
 const API_URL = window.location.hostname === 'localhost'
     ? 'http://localhost:3000/curiosidades'
-    : 'https://teresopolis-api.onrender.com/curiosidades';
+    : '/curiosidades';
 
 let curiosidades = [];
 

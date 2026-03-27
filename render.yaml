@@ -11,12 +11,6 @@ services:
           name: teresopolis-db
           property: connectionString
 
-  - type: web
-    name: teresopolis-frontend
-    runtime: static
-    rootDir: frontend
-    staticPublishPath: .
-
 databases:
   - name: teresopolis-db
     plan: free
