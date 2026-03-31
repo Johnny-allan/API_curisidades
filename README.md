@@ -23,14 +23,14 @@ Sistema completo com backend e frontend para visualizar, cadastrar, editar e exc
 ## 📁 Estrutura do Projeto
 
 ├── backend/
-│ ├── server.js # Servidor Express + Sequelize
-│ ├── banco.sqlite # Banco de dados local (gerado automaticamente)
-│ ├── package.json # Dependências
-│ └── README.md
+│   ├── server.js          # Servidor Express + Sequelize
+│   ├── banco.sqlite       # Banco de dados local (gerado automaticamente)
+│   ├── package.json       # Dependências
+│   └── README.md
 └── frontend/
-├── index.html # Interface principal
-├── script.js # Lógica do frontend
-└── style.css # Estilos
+    ├── index.html         # Interface principal
+    ├── script.js          # Lógica do frontend
+    └── style.css          # Estilos
 
 ## 🔧 Instalação e Execução
 
