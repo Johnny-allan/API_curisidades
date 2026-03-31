@@ -4,7 +4,7 @@ API REST para gerenciar curiosidades sobre a cidade de Teresópolis, desenvolvid
 
 ## 📋 Sobre o Projeto
 
-Sistema completo com backend e frontend para visualizar, cadastrar, editar e excluir curiosidades sobre Teresópolis. Os dados são armazenados em banco de dados SQLite via Sequelize ORM.
+Sistema completo com backend e frontend para visualizar, cadastrar, editar e excluir curiosidades sobre Teresópolis. Os dados são armazenados em SQLite (local) ou PostgreSQL (produção) via Sequelize ORM.
 
 ## 🚀 Tecnologias
 
@@ -12,7 +12,8 @@ Sistema completo com backend e frontend para visualizar, cadastrar, editar e exc
 - Node.js
 - Express.js
 - Sequelize ORM
-- SQLite
+- SQLite (desenvolvimento)
+- PostgreSQL (produção)
 - CORS
 
 ### Frontend
@@ -74,12 +75,13 @@ Remove uma curiosidade pelo ID.
 
 ## 💡 Funcionalidades
 
-- ✅ Listar todas as curiosidades
+- ✅ Listar todas as curiosidades na página inicial
+- ✅ Painel lateral de gerenciamento
 - ✅ Adicionar novas curiosidades
 - ✅ Editar curiosidades via modal
 - ✅ Excluir curiosidades com confirmação
-- ✅ Dados iniciais carregados automaticamente
-- ✅ Persistência de dados com SQLite + Sequelize
+- ✅ Dados iniciais carregados automaticamente se o banco estiver vazio
+- ✅ Persistência com SQLite (local) e PostgreSQL (produção)
 - ✅ Interface responsiva
 
 ## 👨💻 Autor
