@@ -1,14 +1,10 @@
 # 🏔️ API Curiosidades de Teresópolis
 
-API REST para gerenciar curiosidades sobre a cidade de Teresópolis, desenvolvida com Node.js, Express e PostgreSQL.
-
-## 🌐 Site no Ar
-
-Acesse: https://api-curisidades.onrender.com
+API REST para gerenciar curiosidades sobre a cidade de Teresópolis, desenvolvida com Node.js, Express e Sequelize.
 
 ## 📋 Sobre o Projeto
 
-Sistema completo com backend e frontend para visualizar, cadastrar, editar e excluir curiosidades sobre Teresópolis. Os dados são armazenados em banco de dados PostgreSQL hospedado no Render.
+Sistema completo com backend e frontend para visualizar, cadastrar, editar e excluir curiosidades sobre Teresópolis. Os dados são armazenados em banco de dados SQLite via Sequelize ORM.
 
 ## 🚀 Tecnologias
 
@@ -16,7 +12,7 @@ Sistema completo com backend e frontend para visualizar, cadastrar, editar e exc
 - Node.js
 - Express.js
 - Sequelize ORM
-- PostgreSQL (produção) / SQLite (desenvolvimento local)
+- SQLite
 - CORS
 
 ### Frontend
@@ -26,38 +22,34 @@ Sistema completo com backend e frontend para visualizar, cadastrar, editar e exc
 
 ## 📁 Estrutura do Projeto
 
-```
 ├── backend/
 │   ├── server.js          # Servidor Express + Sequelize
-│   ├── banco.sqlite       # Banco de dados local (desenvolvimento)
+│   ├── banco.sqlite       # Banco de dados local (gerado automaticamente)
 │   ├── package.json       # Dependências
 │   └── README.md
 └── frontend/
     ├── index.html         # Interface principal
     ├── script.js          # Lógica do frontend
     └── style.css          # Estilos
-```
 
-## 🔧 Instalação e Execução Local
+## 🔧 Instalação e Execução
 
 ### Backend
 
-```bash
 cd backend
 npm install
 npm start
-```
 
-O servidor estará rodando em `http://localhost:3000`
+O servidor estará rodando em http://localhost:3000
 
 ### Frontend
 
-Abra o arquivo `frontend/index.html` diretamente no navegador ou use um servidor local:
+Abra o arquivo frontend/index.html diretamente no navegador.
 
-```bash
+Ou use o http-server do próprio Node.js:
+
 cd frontend
-python -m http.server 8000
-```
+npx http-server
 
 ## 📡 Endpoints da API
 
@@ -67,14 +59,12 @@ Retorna todas as curiosidades cadastradas.
 ### POST /curiosidades
 Cria uma nova curiosidade.
 
-**Body:**
-```json
+Body:
 {
   "titulo": "Título da curiosidade",
   "descricao": "Descrição detalhada",
   "foto_url": "URL da imagem"
 }
-```
 
 ### PUT /curiosidades/:id
 Atualiza uma curiosidade existente.
@@ -84,20 +74,13 @@ Remove uma curiosidade pelo ID.
 
 ## 💡 Funcionalidades
 
-- ✅ Página inicial exibe todas as curiosidades automaticamente
-- ✅ Painel lateral de gerenciamento acessível pelo botão "Cadastro" no canto superior direito
-- ✅ Adicionar novas curiosidades pelo painel lateral
-- ✅ Editar curiosidades via modal de edição
+- ✅ Listar todas as curiosidades
+- ✅ Adicionar novas curiosidades
+- ✅ Editar curiosidades via modal
 - ✅ Excluir curiosidades com confirmação
-- ✅ Dados persistidos em PostgreSQL
-- ✅ Dados iniciais carregados automaticamente se o banco estiver vazio
-- ✅ Interface responsiva (mobile e desktop)
-
-## ☁️ Hospedagem
-
-- Plataforma: [Render](https://render.com)
-- Backend + Frontend: 1 Web Service (Node.js)
-- Banco de dados: PostgreSQL (Render Free)
+- ✅ Dados iniciais carregados automaticamente
+- ✅ Persistência de dados com SQLite + Sequelize
+- ✅ Interface responsiva
 
 ## 👨💻 Autor
 
