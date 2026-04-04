@@ -2,6 +2,8 @@
 
 API REST para gerenciar curiosidades sobre a cidade de Teresópolis, desenvolvida com Node.js, Express e Sequelize.
 
+Site → https://api-curisidades.onrender.com/
+
 ## 📋 Sobre o Projeto
 
 Sistema completo com backend e frontend para visualizar, cadastrar, editar e excluir curiosidades sobre Teresópolis. Os dados são armazenados em SQLite (local) ou PostgreSQL (produção) via Sequelize ORM.
