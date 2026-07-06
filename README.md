@@ -22,7 +22,6 @@ Sistema completo com backend e frontend para visualizar, cadastrar, editar e exc
 
 ## 📁 Estrutura do Projeto
 
-```
 ├── backend/
 │   ├── server.js          # Servidor Express + Sequelize
 │   ├── banco.sqlite       # Banco de dados local (gerado automaticamente)
@@ -32,30 +31,23 @@ Sistema completo com backend e frontend para visualizar, cadastrar, editar e exc
     ├── index.html         # Interface principal
     ├── script.js          # Lógica do frontend
     └── style.css          # Estilos
-```
 
 ## 🔧 Instalação e Execução
 
 ### Backend
 
-```bash
 cd backend
 npm install
 npm start
-```
 
-O servidor estará rodando em `http://localhost:3000`
+O servidor estará rodando em http://localhost:3000
 
 ### Frontend
 
-Abra o arquivo `frontend/index.html` diretamente no navegador.
+Abra o arquivo `frontend/index.html` diretamente no navegador ou use um servidor local:
 
-Ou use o http-server do próprio Node.js:
-
-```bash
 cd frontend
 npx http-server
-```
 
 ## 📡 Endpoints da API
 
@@ -65,14 +57,12 @@ Retorna todas as curiosidades cadastradas.
 ### POST /curiosidades
 Cria uma nova curiosidade.
 
-**Body:**
-```json
+Body:
 {
   "titulo": "Título da curiosidade",
   "descricao": "Descrição detalhada",
   "foto_url": "URL da imagem"
 }
-```
 
 ### PUT /curiosidades/:id
 Atualiza uma curiosidade existente.
