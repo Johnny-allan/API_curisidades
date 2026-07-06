@@ -1,60 +1,27 @@
-# 🏔️ API Curiosidades de Teresópolis
+# API Curiosidades de Teresópolis
 
-API REST para gerenciar curiosidades sobre a cidade de Teresópolis, desenvolvida com Node.js, Express e Sequelize.
+API simples para gerenciar curiosidades sobre Teresópolis.
 
-Site → https://api-curisidades.onrender.com/
+## Instalação
 
-## 📋 Sobre o Projeto
-
-Sistema completo com backend e frontend para visualizar, cadastrar, editar e excluir curiosidades sobre Teresópolis. Os dados são armazenados em SQLite (local) ou PostgreSQL (produção) via Sequelize ORM.
-
-## 🚀 Tecnologias
-
-### Backend
-- Node.js
-- Express.js
-- Sequelize ORM
-- SQLite (desenvolvimento)
-- PostgreSQL (produção)
-- CORS
-
-### Frontend
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-
-## 📁 Estrutura do Projeto
-
-├── backend/
-│   ├── server.js          # Servidor Express + Sequelize
-│   ├── banco.sqlite       # Banco de dados local (gerado automaticamente)
-│   ├── package.json       # Dependências
-│   └── README.md
-└── frontend/
-    ├── index.html         # Interface principal
-    ├── script.js          # Lógica do frontend
-    └── style.css          # Estilos
-
-## 🔧 Instalação e Execução
-
-### Backend
-
-cd backend
+1. Instale as dependências:
+```bash
 npm install
+```
+
+2. Rode a API:
+```bash
 npm start
+```
 
-O servidor estará rodando em http://localhost:3000
+Ou em modo desenvolvimento:
+```bash
+npm run dev
+```
 
-### Frontend
+Os dados ficam salvos no arquivo `dados.json`.
 
-Abra o arquivo frontend/index.html diretamente no navegador.
-
-Ou use o http-server do próprio Node.js:
-
-cd frontend
-npx http-server
-
-## 📡 Endpoints da API
+## Endpoints
 
 ### GET /curiosidades
 Retorna todas as curiosidades cadastradas.
@@ -63,35 +30,27 @@ Retorna todas as curiosidades cadastradas.
 Cria uma nova curiosidade.
 
 Body:
+```json
 {
-  "titulo": "Título da curiosidade",
-  "descricao": "Descrição detalhada",
-  "foto_url": "URL da imagem"
+  "titulo": "Nome do local",
+  "descricao": "Descrição da curiosidade",
+  "foto_url": "URL da foto"
 }
+```
 
 ### PUT /curiosidades/:id
 Atualiza uma curiosidade existente.
 
+Body:
+```json
+{
+  "titulo": "Novo título",
+  "descricao": "Nova descrição",
+  "foto_url": "Nova URL da foto"
+}
+```
+
 ### DELETE /curiosidades/:id
-Remove uma curiosidade pelo ID.
+Deleta uma curiosidade pelo ID.
 
-## 💡 Funcionalidades
-
-- ✅ Listar todas as curiosidades na página inicial
-- ✅ Painel lateral de gerenciamento
-- ✅ Adicionar novas curiosidades
-- ✅ Editar curiosidades via modal
-- ✅ Excluir curiosidades com confirmação
-- ✅ Dados iniciais carregados automaticamente se o banco estiver vazio
-- ✅ Persistência com SQLite (local) e PostgreSQL (produção)
-- ✅ Interface responsiva
-
-## 👨💻 Autor
-
-**Allan Johnny**
-
-Projeto estudantil desenvolvido em 2026
-
-## 📄 Licença
-
-Este é um projeto educacional de código aberto.
+Exemplo: `DELETE /curiosidades/1`
